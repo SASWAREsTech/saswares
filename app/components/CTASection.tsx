@@ -2,13 +2,13 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import Particles from '@tsparticles/react'
-import { loadBasic } from '@tsparticles/basic'
-import { Engine } from '@tsparticles/engine'
+// import Particles from '@tsparticles/react'
+// import { loadBasic } from '@tsparticles/basic'
+// import { Engine } from '@tsparticles/engine'
 
-const particlesInit = async (engine: Engine) => {
-  await loadBasic(engine)
-}
+// const particlesInit = async (engine: Engine) => {
+//   await loadBasic(engine)
+// }
 
 const CTASection = () => {
   return (
