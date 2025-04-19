@@ -53,7 +53,7 @@ const CTASection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        Whether it's AI, automation, dashboards or complete web platforms — our team makes it real.
+        Whether it&apos;s AI, automation, dashboards or complete web platforms — our team makes it real.
       </motion.p>
 
       {/* Psychology trigger line */}

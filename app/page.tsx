@@ -1,5 +1,4 @@
 import Hero from './components/Hero'
-import TeamSection from './components/TeamSection'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import TechStack from './components/TechStack'
@@ -8,7 +7,7 @@ import Footer from './components/Footer'
 import CTASection from './components/CTASection'
 import FAQ from './components/FAQ'
 import Stats from './components/Stats'
-import DarkModeToggle from './components/DarkModeToggle'
+
 
 
 export const metadata = {

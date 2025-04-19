@@ -18,12 +18,12 @@ const faqItems = [
   {
     question: 'How long does a typical project take?',
     answer:
-      'Timelines depend on scope. Smaller projects take 1–2 weeks, while larger systems range from 4–6 weeks or more.',
+      'Timelines depend on scope. Smaller projects take 1-2 weeks, while larger systems range from 4-6 weeks or more.',
   },
   {
     question: 'Can you handle both backend and frontend?',
     answer:
-      'Yes — we’re a full-stack team. We build frontend UIs, backend APIs, and architect the database and system logic.',
+      "Yes — we're a full-stack team. We build frontend UIs, backend APIs, and architect the database and system logic.",
   },
 ]
 

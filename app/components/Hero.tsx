@@ -79,14 +79,14 @@ const Hero = () => {
               href="#contact"
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold rounded-md dark:bg-red-500 dark:hover:bg-red-600 transition-colors"
             >
-              Let's Work Together
+              Let&apos;s Work Together
             </a>
-            <a
+            <link
               href="/projects"
               className="text-blue-600 dark:text-red-400 hover:underline text-lg font-medium"
             >
               View Projects →
-            </a>
+            </link>
           </motion.div>
         </div>
 

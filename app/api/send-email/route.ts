@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
   if (data.botField) return NextResponse.json({ status: 'spam' })
 
-  const { name, email, message, service, recaptchaToken } = data
+  const { name, email, message, service } = data
 
   // Optionally: Verify reCAPTCHA token with Google
   // (Server-side check not mandatory but more secure)

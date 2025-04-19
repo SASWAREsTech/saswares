@@ -10,6 +10,7 @@ import { TbBrandCpp } from 'react-icons/tb'
 import { FaJava } from 'react-icons/fa'
 import { SiPhp } from "react-icons/si";
 import { SiKeras } from "react-icons/si";
+import type { IconType } from 'react-icons'
 
 const techGroups = [
   {
@@ -73,7 +74,7 @@ const TechCard = ({
   color,
 }: {
   name: string
-  Icon: any
+  Icon: IconType
   color: string
 }) => (
   <Tilt

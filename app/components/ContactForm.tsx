@@ -125,7 +125,7 @@ const ContactForm = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              ✅ Thanks! We'll get back to you soon.
+              ✅ Thanks! We&apos;ll get back to you soon.
             </motion.p>
           )}
         </AnimatePresence>

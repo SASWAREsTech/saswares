@@ -6,7 +6,6 @@ import {
   SiPlotly,
   SiPandas,
   SiMysql,
-  SiTypescript,
   SiReact,
   SiNextdotjs,
   SiMongodb,
