@@ -5,11 +5,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { motion } from 'framer-motion'
 
-interface PageProps {
-  params: { slug: string }
-}
-
-export default function ProjectPage({ params }: PageProps) {
+export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find(p => p.slug === params.slug)
   if (!project) return notFound()
 
