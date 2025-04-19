@@ -6,8 +6,19 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { team } from './teamData'
 import { motion, AnimatePresence } from 'framer-motion'
 
+type TeamMember = {
+  name: string
+  role: string
+  image: string
+  github: string
+  linkedin: string
+  bio: string
+  skills: string[]
+  cvUrl: string
+}
+
 export default function TeamPage() {
-  const [selected, setSelected] = useState(null)
+  const [selected, setSelected] = useState<TeamMember | null>(null)
 
   return (
     <main className="min-h-screen bg-[#0d0d0d] text-white px-6 py-32 relative overflow-hidden">
@@ -41,7 +52,6 @@ export default function TeamPage() {
             className="text-center group cursor-pointer"
             onClick={() => setSelected(member)}
           >
-            {/* Image w/ Gradient Border */}
             <div className="relative w-[250px] h-[250px] mx-auto rounded-2xl overflow-hidden border-4 border-transparent bg-gradient-to-tr from-purple-500 via-pink-500 to-orange-400 p-1">
               <Image
                 src={member.image}
@@ -50,7 +60,6 @@ export default function TeamPage() {
                 className="object-cover rounded-2xl group-hover:scale-105 transition duration-300"
               />
             </div>
-
             <h3 className="mt-6 text-xl font-bold">{member.name}</h3>
             <p className="text-sm text-white/50 uppercase tracking-wider">{member.role}</p>
 
