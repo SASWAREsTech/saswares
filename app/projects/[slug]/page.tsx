@@ -1,4 +1,3 @@
-'use client'
 
 import { projects } from '../projectsData'
 import Image from 'next/image'

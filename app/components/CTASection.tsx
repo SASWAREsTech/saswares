@@ -13,7 +13,7 @@ const particlesInit = async (engine: Engine) => {
 const CTASection = () => {
   return (
     <section className="relative py-36 px-6 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300 overflow-hidden text-center text-gray-900 dark:text-white scroll-mt-24">
-      {/* Particle Background */}
+      {/* Particle Background
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -27,12 +27,12 @@ const CTASection = () => {
             move: { enable: true, speed: 0.5 },
             size: { value: { min: 0.5, max: 2 } },
             opacity: { value: 0.3 },
-            number: { value: 60, density: { enable: true, area: 800 } },
+            number: { value: 60, density: { enable: true, value_area: 800 } },
           },
           detectRetina: true,
         }}
         className="absolute inset-0 -z-10"
-      />
+      /> */}
 
       {/* Animated Light Blobs */}
       <div className="absolute w-[500px] h-[500px] top-[-150px] left-[-150px] bg-gradient-to-br from-pink-500 to-purple-500 blur-[180px] opacity-20 animate-pulse -z-10" />
@@ -44,7 +44,7 @@ const CTASection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Let’s Build Something Unforgettable
+        Let&apos;s Build Something Unforgettable
       </motion.h2>
 
       <motion.p
