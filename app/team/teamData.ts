@@ -1,0 +1,32 @@
+export const team = [
+  {
+    name: 'Awais Nazir',
+    role: 'Backend Engineer',
+    image: '/team/awais.jpg',
+    github: 'https://github.com/awaisnazir',
+    linkedin: 'https://linkedin.com/in/awaisnazir',
+    bio: 'A passionate backend developer and software engineering student at UET Lahore. Specialized in Python, Java, C++, and DBMS.',
+    skills: ['Python', 'PostgreSQL', 'C++', 'Django', 'Java'],
+    cvUrl: '/cv/awais.pdf',
+  },
+  {
+    name: 'Sadam Barkat',
+    role: 'Data Analyst',
+    image: '/team/sadam.jpg',
+    github: 'https://github.com/sadam',
+    linkedin: 'https://linkedin.com/in/sadam',
+    bio: 'Computer science student at GC University Faisalabad. Enthusiastic about data visualization, analysis, and big data technologies.',
+    skills: ['Python', 'Pandas', 'PowerBI', 'SQL'],
+    cvUrl: '/cv/sadam.pdf',
+  },
+  {
+    name: 'Sikandar Hussain',
+    role: 'AI/ML Engineer',
+    image: '/team/sikander.jpg',
+    github: 'https://github.com/sikander',
+    linkedin: 'https://linkedin.com/in/sikander',
+    bio: 'Computer engineering student at NUST EME. Deep learning, AI/ML model building, and research are his expertise.',
+    skills: ['TensorFlow', 'PyTorch', 'NLP', 'ML Ops'],
+    cvUrl: '/cv/sikander.pdf',
+  },
+]
