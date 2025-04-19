@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ReactTyped } from 'react-typed'
 import Image from 'next/image'
@@ -81,12 +81,12 @@ const Hero = () => {
             >
               Let&apos;s Work Together
             </a>
-            <link
+            <Link
               href="/projects"
               className="text-blue-600 dark:text-red-400 hover:underline text-lg font-medium"
             >
               View Projects →
-            </link>
+            </Link>
           </motion.div>
         </div>
 
