@@ -37,10 +37,10 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Company</h4>
           <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
             {[
-              ['About Us', '/about'],
-              ['Careers', '/careers'],
+              ['About Us', '/#home'],
+              ['Careers', '/#home'],
               ['Our Work', '/projects'],
-              ['Press Kit', '/press'],
+              ['Press Kit', '/#home'],
             ].map(([label, href]) => (
               <li key={href} className="group relative">
                 <Link
@@ -60,10 +60,10 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Support</h4>
           <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
             {[
-              ['Help Center', '/support'],
-              ['Contact', '/contact'],
-              ['Documentation', '/docs'],
-              ['Privacy Policy', '/privacy'],
+              ['Help Center', '/#home'],
+              ['Contact', '/#contact'],
+              ['Documentation', '/#home'],
+              ['Privacy Policy', '/#home'],
             ].map(([label, href]) => (
               <li key={href} className="group relative">
                 <Link
@@ -86,7 +86,7 @@ const Footer = () => {
             Get the latest updates, project launches, and engineering insights.
           </p>
           <a
-            href="mailto:contact@saswares.dev"
+            href="mailto:saswares.tech@gmail.com"
             className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-pink-500 hover:bg-pink-600 rounded-md transition-colors"
           >
             <FaEnvelope />
@@ -96,10 +96,10 @@ const Footer = () => {
           <div className="flex gap-4 mt-6 text-xl text-gray-500 dark:text-gray-400">
             <a href="https://facebook.com" target="_blank" className="hover:text-blue-600"><FaFacebook /></a>
             <a href="https://twitter.com" target="_blank" className="hover:text-blue-400"><FaXTwitter /></a>
-            <a href="https://youtube.com" target="_blank" className="hover:text-red-500"><FaYoutube /></a>
-            <a href="https://instagram.com" target="_blank" className="hover:text-pink-500"><FaInstagram /></a>
-            <a href="https://linkedin.com" target="_blank" className="hover:text-blue-700"><FaLinkedin /></a>
-            <a href="https://github.com" target="_blank" className="hover:text-gray-800 dark:hover:text-white"><FaGithub /></a>
+            <a href="https://www.youtube.com/@saswares" target="_blank" className="hover:text-red-500"><FaYoutube /></a>
+            <a href="https://www.instagram.com/saswares" target="_blank" className="hover:text-pink-500"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/company/saswares/" target="_blank" className="hover:text-blue-700"><FaLinkedin /></a>
+            <a href="https://github.com/SASWAREsTech" target="_blank" className="hover:text-gray-800 dark:hover:text-white"><FaGithub /></a>
           </div>
         </div>
       </div>
@@ -107,9 +107,9 @@ const Footer = () => {
 
       {/* Bottom Divider */}
       <div className="border-t border-gray-200 dark:border-white/10 pt-6 mt-6 text-sm text-gray-500 dark:text-gray-400 flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto">
-        <p>&copy; {new Date().getFullYear()} SASWAREs. All rights reserved.</p>
+        <p>Built with 💻 by engineers who <span className="text-pink-500">love what they do</span>.</p>
         <p className="mt-2 sm:mt-0">
-          Built with 💻 by engineers who <span className="text-pink-500">love what they do</span>.
+        &copy; {new Date().getFullYear()} SASWAREs. All rights reserved.
         </p>
       </div>
     </footer>

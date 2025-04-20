@@ -21,7 +21,7 @@ export default function TeamPage() {
   const [selected, setSelected] = useState<TeamMember | null>(null)
 
   return (
-    <main className="min-h-screen bg-[#0d0d0d] text-white px-6 py-32 relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-white to-gray-50 dark:from-[#0d0d0d] dark:to-black text-gray-900 dark:text-white px-6 py-32 relative overflow-hidden transition-colors duration-300">
       {/* Top Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -29,13 +29,13 @@ export default function TeamPage() {
         transition={{ duration: 0.6 }}
         className="text-center mb-24"
       >
-        <h2 className="text-sm tracking-widest uppercase text-white/40">
+        <h2 className="text-sm tracking-widest uppercase text-gray-500 dark:text-white/40">
           Meet the Team
         </h2>
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-fuchsia-500 via-blue-500 to-cyan-400 bg-clip-text text-transparent mt-3">
           The Minds Behind SASWARE
         </h1>
-        <p className="text-white/50 mt-4 text-sm max-w-xl mx-auto">
+        <p className="text-gray-600 dark:text-white/50 mt-4 text-sm max-w-xl mx-auto">
           Three engineers. One goal — crafting intelligent, scalable, and bold software solutions.
         </p>
       </motion.div>
@@ -61,16 +61,16 @@ export default function TeamPage() {
               />
             </div>
             <h3 className="mt-6 text-xl font-bold">{member.name}</h3>
-            <p className="text-sm text-white/50 uppercase tracking-wider">{member.role}</p>
+            <p className="text-sm text-gray-600 dark:text-white/50 uppercase tracking-wider">{member.role}</p>
 
-            <div className="flex justify-center gap-4 mt-4 text-white/60 text-lg">
+            <div className="flex justify-center gap-4 mt-4 text-gray-500 dark:text-white/60 text-lg">
               {member.github && (
-                <a href={member.github} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <a href={member.github} target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white">
                   <FaGithub />
                 </a>
               )}
               {member.linkedin && (
-                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white">
                   <FaLinkedin />
                 </a>
               )}
@@ -82,7 +82,11 @@ export default function TeamPage() {
       {/* Popup Modal */}
       <AnimatePresence>
         {selected && (
+          // className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 px-4 bg-gradient-to-br from-white to-gray-100 dark:from-[#1e3c72] dark:via-[#2a5298] dark:to-[#1e3c72] text-gray-900 dark:text-white rounded-2xl p-8 max-w-2xl w-full shadow-2xl border border-black/10 dark:border-white/10 transition-colors duration-300"
+          
           <motion.div
+          // className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 px-4 bg-gradient-to-br from-white to-gray-100 dark:from-[#1e3c72] dark:via-[#2a5298] dark:to-[#1e3c72] text-gray-900 dark:text-white rounded-2xl p-8 max-w-2xl shadow-2xl border border-black/10 dark:border-white/10 transition-colors duration-300"
+
             className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 px-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -90,6 +94,7 @@ export default function TeamPage() {
             onClick={() => setSelected(null)}
           >
             <motion.div
+            
               className="relative bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] rounded-2xl p-8 max-w-2xl w-full shadow-2xl border border-white/10"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -113,7 +118,7 @@ export default function TeamPage() {
                   className="rounded-xl object-cover"
                 />
                 <div>
-                  <h2 className="text-2xl font-bold">{selected.name}</h2>
+                  <h2 className="text-2xl text-white font-bold">{selected.name}</h2>
                   <p className="text-white/60">{selected.role}</p>
                   <p className="mt-4 text-white/90 leading-relaxed">{selected.bio}</p>
                   <div className="mt-4 flex flex-wrap gap-2">

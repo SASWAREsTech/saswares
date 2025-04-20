@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden py-28 sm:py-36 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300">
+    <section id='home' className="relative overflow-hidden py-28 sm:py-36 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300">
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div

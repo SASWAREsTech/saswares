@@ -56,7 +56,7 @@ export default function Home() {
       <FAQ />
       <ContactForm/>
       {/* <TeamSection /> */}
-      <Footer/>
+      {/* <Footer/> */}
       {/* <DarkModeToggle /> */}
     </div>
   )

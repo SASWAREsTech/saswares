@@ -12,7 +12,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   if (!project) return notFound()
 
   return (
-    <main className="relative bg-black text-white min-h-screen overflow-x-hidden">
+    <main className="relative bg-gradient-to-br from-white to-gray-50 dark:from-black dark:to-[#0a0a0a] text-gray-900 dark:text-white min-h-screen overflow-x-hidden transition-colors duration-300">
       {/* Glows */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute w-[400px] h-[400px] top-[-100px] left-[-100px] bg-gradient-to-br from-pink-500 to-purple-600 blur-[200px] opacity-20" />
@@ -31,12 +31,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </motion.h1>
 
         {project.type && (
-          <p className="text-sm uppercase tracking-wide font-semibold text-pink-400">
+          <p className="text-sm uppercase tracking-wide font-semibold text-pink-500">
             {project.type}
           </p>
         )}
 
-        <p className="text-gray-400 max-w-xl mx-auto mt-3">{project.description}</p>
+        <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto mt-3">
+          {project.description}
+        </p>
       </section>
 
       {/* Content */}
@@ -65,14 +67,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               title={project.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="w-full h-full rounded-lg border border-white/10"
+              className="w-full h-full rounded-lg border border-black/10 dark:border-white/10"
             />
           </div>
         )}
 
         {/* Main Content */}
         <motion.div
-          className="prose prose-invert max-w-none text-white/90 leading-relaxed"
+          className="prose max-w-none text-gray-800 dark:prose-invert dark:text-white/90 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -81,21 +83,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
         {/* Result */}
         {project.result && (
-          <p className="mt-8 text-white/70 text-sm italic border-l-4 pl-4 border-pink-500">
+          <p className="mt-8 text-gray-600 dark:text-white/70 text-sm italic border-l-4 pl-4 border-pink-500">
             💡 <span className="font-medium">{project.result}</span>
           </p>
         )}
 
         {/* Tech Stack */}
         <div className="mt-12">
-          <h3 className="text-sm font-semibold uppercase text-gray-400 tracking-wide">
+          <h3 className="text-sm font-semibold uppercase text-gray-600 dark:text-gray-400 tracking-wide">
             Tech Stack
           </h3>
           <div className="flex flex-wrap gap-3 mt-4">
             {project.tech.map(({ name, icon: Icon }, i) => (
               <span
                 key={i}
-                className="flex items-center gap-2 bg-white/10 text-white px-3 py-1 rounded-full text-sm backdrop-blur border border-white/10"
+                className="flex items-center gap-2 bg-black/10 dark:bg-white/10 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm backdrop-blur border border-black/10 dark:border-white/10"
               >
                 {Icon && <Icon className="text-base" />}
                 {name}
@@ -109,7 +111,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <motion.a
             href={project.link}
             target="_blank"
-            className="inline-block mt-10 text-sm font-medium tracking-wide text-pink-500 hover:text-pink-400 hover:underline transition"
+            className="inline-block mt-10 text-sm font-medium tracking-wide text-pink-600 dark:text-pink-400 hover:underline transition"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
