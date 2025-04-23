@@ -65,7 +65,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Scalable, smart, full-stack — we turn your ideas into reality using bleeding-edge tech and actual engineering principles.
+            Scalable, smart, full-stack — we turn your ideas into reality using bleeding-edge tech and actual engineering principles...
           </motion.p>
 
           <motion.div
