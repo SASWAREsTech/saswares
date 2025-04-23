@@ -33,10 +33,10 @@ const ContactForm = () => {
       id="contact"
       className="relative py-32 px-6 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300 text-gray-900 dark:text-white scroll-mt-28"
     >
-      {/* Background accents */}
+      {/* Gradient Background Blobs (lighter blur) */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute w-80 h-80 top-[-100px] left-[-100px] bg-gradient-to-br from-pink-500 to-purple-500 blur-[160px] opacity-20" />
-        <div className="absolute w-96 h-96 bottom-[-150px] right-[-100px] bg-gradient-to-tr from-blue-500 to-cyan-500 blur-[140px] opacity-20" />
+        <div className="absolute w-80 h-80 top-[-100px] left-[-100px] bg-gradient-to-br from-pink-500 to-purple-500 blur-[100px] opacity-15" />
+        <div className="absolute w-96 h-96 bottom-[-150px] right-[-100px] bg-gradient-to-tr from-blue-500 to-cyan-500 blur-[120px] opacity-15" />
       </div>
 
       <motion.h2
@@ -44,6 +44,7 @@ const ContactForm = () => {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
         Contact Us
       </motion.h2>
@@ -53,13 +54,14 @@ const ContactForm = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
+        viewport={{ once: true }}
       >
         Got an idea or a project in mind? We usually respond within 24 hours.
       </motion.p>
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-2xl mx-auto grid gap-6 bg-white/40 dark:bg-white/5 p-8 rounded-3xl border border-black/10 dark:border-white/10 backdrop-blur-md shadow-xl shadow-black/10 dark:shadow-black/20"
+        className="max-w-2xl mx-auto grid gap-6 bg-white/50 dark:bg-white/5 p-8 rounded-3xl border border-black/10 dark:border-white/10 backdrop-blur-md shadow-lg shadow-black/10 dark:shadow-black/30 transition-colors"
       >
         {/* Honeypot anti-spam */}
         <input type="hidden" {...register('botField')} />
@@ -68,7 +70,7 @@ const ContactForm = () => {
           <label className="block mb-1 text-sm text-gray-800 dark:text-white/80">Name</label>
           <input
             {...register('name', { required: true })}
-            className="w-full px-4 py-3 rounded-lg bg-white/60 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-white/70 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
           />
           {errors.name && <motion.p className="text-sm text-red-500 mt-1">Name is required</motion.p>}
         </div>
@@ -78,7 +80,7 @@ const ContactForm = () => {
           <input
             type="email"
             {...register('email', { required: true })}
-            className="w-full px-4 py-3 rounded-lg bg-white/60 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-white/70 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
           />
           {errors.email && <motion.p className="text-sm text-red-500 mt-1">Email is required</motion.p>}
         </div>
@@ -88,7 +90,7 @@ const ContactForm = () => {
           <textarea
             rows={5}
             {...register('message', { required: true })}
-            className="w-full px-4 py-3 rounded-lg bg-white/60 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-white/70 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
           />
           {errors.message && <motion.p className="text-sm text-red-500 mt-1">Message is required</motion.p>}
         </div>
@@ -97,7 +99,7 @@ const ContactForm = () => {
           <label className="block mb-1 text-sm text-gray-800 dark:text-white/80">Service</label>
           <select
             {...register('service')}
-            className="w-full px-4 py-3 rounded-lg bg-white/60 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-white/70 dark:bg-black/40 text-gray-900 dark:text-white border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
           >
             <option value="">-- Select a Service --</option>
             <option>AI/ML</option>

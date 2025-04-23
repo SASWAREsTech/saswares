@@ -38,10 +38,10 @@ const FAQ = () => {
       id="faq"
       className="relative py-32 px-6 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300 text-gray-900 dark:text-white overflow-hidden scroll-mt-28"
     >
-      {/* Background accents */}
+      {/* Background accents (softened blur for perf) */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute w-[500px] h-[500px] top-[-100px] left-[-100px] bg-gradient-to-br from-purple-500 to-pink-500 blur-[160px] opacity-20" />
-        <div className="absolute w-[400px] h-[400px] bottom-[-150px] right-[-100px] bg-gradient-to-tr from-blue-500 to-cyan-500 blur-[140px] opacity-20" />
+        <div className="absolute w-[400px] h-[400px] top-[-100px] left-[-100px] bg-gradient-to-br from-purple-500 to-pink-500 blur-[100px] opacity-15" />
+        <div className="absolute w-[350px] h-[350px] bottom-[-120px] right-[-80px] bg-gradient-to-tr from-blue-500 to-cyan-500 blur-[100px] opacity-15" />
       </div>
 
       <motion.h2
@@ -49,6 +49,7 @@ const FAQ = () => {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
         Frequently Asked Questions
       </motion.h2>
@@ -59,8 +60,9 @@ const FAQ = () => {
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="rounded-xl border border-black/10 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-md px-6 py-4 transition-colors"
+            transition={{ delay: index * 0.08 }}
+            viewport={{ once: true }}
+            className="rounded-xl border border-black/10 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur-sm px-6 py-4 transition-colors"
           >
             <button
               onClick={() => toggle(index)}

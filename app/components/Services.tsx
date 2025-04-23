@@ -1,7 +1,7 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
-import Tilt from 'react-parallax-tilt'
 import {
   FaBrain,
   FaLaptopCode,
@@ -12,6 +12,12 @@ import {
   FaBuilding,
   FaPlug
 } from 'react-icons/fa'
+
+// Lazy-load tilt
+const Tilt = dynamic(() => import('react-parallax-tilt'), {
+  ssr: false,
+  loading: () => <div />,
+})
 
 const services = [
   { title: 'AI & ML Solutions', icon: FaBrain, desc: 'Custom AI/ML/DL models, training,Biomedical Signal Analysis and Feature Extraction, MlOps CICD pipelines.' },
@@ -33,6 +39,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
           Our Services
         </motion.h2>
@@ -45,7 +52,7 @@ const Services = () => {
               glareMaxOpacity={0.1}
               tiltMaxAngleX={4}
               tiltMaxAngleY={4}
-              className="rounded-xl"
+              className="rounded-xl will-change-transform"
             >
               <motion.div
                 className="relative group rounded-xl p-6 border border-transparent dark:border-white/10 bg-white/80 dark:bg-white/5 shadow-md backdrop-blur-md overflow-hidden transition-all"
@@ -67,7 +74,7 @@ const Services = () => {
                   {title}
                 </h3>
 
-                {/* 🧠 Reveal on hover */}
+                {/* Reveal on hover */}
                 <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed max-h-0 opacity-0 overflow-hidden group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
                   {desc}
                 </p>

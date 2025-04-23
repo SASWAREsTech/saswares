@@ -2,7 +2,13 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import Tilt from 'react-parallax-tilt'
+import dynamic from 'next/dynamic'
+
+// Lazy load heavy effect
+const Tilt = dynamic(() => import('react-parallax-tilt'), {
+  ssr: false,
+  loading: () => <div />,
+})
 
 const testimonials = [
   {
@@ -36,11 +42,16 @@ const Testimonials = () => {
   const current = testimonials[visibleIndex]
   const next = testimonials[(visibleIndex + 1) % testimonials.length]
 
-  // Autoplay: advance every 5s unless hovered
   useEffect(() => {
     if (isHovered) return
 
-    timerRef.current = setTimeout(handleNext, 3000)
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(() => {
+        timerRef.current = setTimeout(handleNext, 3000)
+      })
+    } else {
+      timerRef.current = setTimeout(handleNext, 3000)
+    }
 
     return () => clearTimeout(timerRef.current!)
   }, [visibleIndex, isHovered])
@@ -57,14 +68,14 @@ const Testimonials = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Bottom stacked card (next) */}
+          {/* Bottom stacked card */}
           <div className="absolute top-6 left-0 w-full opacity-50 scale-95 z-0">
             <Tilt
               glareEnable
               glareMaxOpacity={0.08}
               tiltMaxAngleX={3}
               tiltMaxAngleY={3}
-              className="rounded-xl"
+              className="rounded-xl will-change-transform"
             >
               <div className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-white/10 rounded-xl p-8 shadow-lg backdrop-blur-xl pointer-events-none">
                 <p className="text-md text-gray-500 dark:text-gray-400 italic mb-4">“{next.quote}”</p>
@@ -95,7 +106,7 @@ const Testimonials = () => {
                 glareMaxOpacity={0.1}
                 tiltMaxAngleX={5}
                 tiltMaxAngleY={5}
-                className="rounded-xl"
+                className="rounded-xl will-change-transform"
               >
                 <motion.div
                   whileHover={{ scale: 1.03, boxShadow: '0 12px 32px rgba(0,0,0,0.15)' }}
@@ -109,7 +120,6 @@ const Testimonials = () => {
                       background: 'radial-gradient(circle at center, #3b82f6, #9333ea, #ef4444)'
                     }}
                   />
-
                   <p className="text-lg text-gray-800 dark:text-gray-200 italic mb-6">“{current.quote}”</p>
                   <h4 className="font-semibold text-gray-900 dark:text-white">{current.name}</h4>
                   <p className="text-sm text-gray-500 dark:text-gray-400">{current.role}</p>

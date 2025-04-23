@@ -13,7 +13,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
   return (
     <main className="relative bg-gradient-to-br from-white to-gray-50 dark:from-black dark:to-[#0a0a0a] text-gray-900 dark:text-white min-h-screen overflow-x-hidden transition-colors duration-300">
-      {/* Glows */}
+      {/* Background Glows */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute w-[400px] h-[400px] top-[-100px] left-[-100px] bg-gradient-to-br from-pink-500 to-purple-600 blur-[200px] opacity-20" />
         <div className="absolute w-[300px] h-[300px] bottom-[-100px] right-[-80px] bg-gradient-to-tr from-blue-500 to-cyan-500 blur-[160px] opacity-20" />
@@ -55,6 +55,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             alt={project.title}
             width={1200}
             height={600}
+            sizes="(min-width: 1024px) 960px, 100vw"
+            priority
             className="w-full h-auto object-cover"
           />
         </motion.div>
@@ -68,11 +70,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full rounded-lg border border-black/10 dark:border-white/10"
+              loading="lazy"
             />
           </div>
         )}
 
-        {/* Main Content */}
+        {/* Description */}
         <motion.div
           className="prose max-w-none text-gray-800 dark:prose-invert dark:text-white/90 leading-relaxed"
           initial={{ opacity: 0 }}
@@ -106,11 +109,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
 
-        {/* CTA Link */}
+        {/* CTA */}
         {project.link && (
           <motion.a
             href={project.link}
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-block mt-10 text-sm font-medium tracking-wide text-pink-600 dark:text-pink-400 hover:underline transition"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
