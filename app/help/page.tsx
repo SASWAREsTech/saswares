@@ -55,7 +55,7 @@ export default function HelpCenter() {
         </div>
 
         <p className="mt-16 text-sm text-center opacity-60">
-          Still have questions? Email us at <a href="mailto:hello@saswares.com" className="underline text-blue-600 dark:text-red-400">hello@saswares.com</a>
+          Still have questions? Email us at <a href="mailto:saswares.tech@gmail.com" className="underline text-blue-600 dark:text-red-400">saswares.tech@gmail.com</a>
         </p>
       </div>
     </section>
