@@ -64,10 +64,10 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Support</h4>
           <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-400">
             {[
-              ['Help Center', '/#home'],
+              ['Help Center', '/help'],
               ['Contact', '/#contact'],
               ['Documentation', '/#home'],
-              ['Privacy Policy', '/#home'],
+              ['Privacy Policy', '/privacy-policy'],
             ].map(([label, href]) => (
               <li key={href} className="group relative">
                 <Link
