@@ -13,7 +13,6 @@ import {
   FaPlug
 } from 'react-icons/fa'
 
-// Lazy-load tilt
 const Tilt = dynamic(() => import('react-parallax-tilt'), {
   ssr: false,
   loading: () => <div />,
@@ -74,8 +73,8 @@ const Services = () => {
                   {title}
                 </h3>
 
-                {/* Reveal on hover */}
-                <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed max-h-0 opacity-0 overflow-hidden group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                {/* 📱 Always visible on mobile | 💻 Hover reveal on desktop */}
+                <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed md:max-h-0 md:opacity-0 md:overflow-hidden md:group-hover:max-h-40 md:group-hover:opacity-100 transition-all duration-500 ease-in-out">
                   {desc}
                 </p>
               </motion.div>
