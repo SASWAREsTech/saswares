@@ -23,7 +23,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden py-28 sm:py-36 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300"
+      className="relative overflow-hidden py-28 sm:py-36 bg-white/80 dark:bg-[#0c0c0c]/80 transition-colors duration-300 backdrop-blur"
+      // className="relative overflow-hidden py-28 sm:py-36 bg-gradient-to-br from-white to-gray-50 dark:from-[#0c0c0c] dark:to-[#0a0a0a] transition-colors duration-300"
     >
       {/* Delayed Animated Background Blobs */}
       {showBlobs && (

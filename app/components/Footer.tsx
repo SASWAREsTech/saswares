@@ -42,9 +42,9 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-400">
             {[
               ['About Us', '/#home'],
-              ['Careers', '/#home'],
+              ['Careers', '/careers'],
               ['Our Work', '/projects'],
-              ['Press Kit', '/#home'],
+              ['Press Kit', '/press-kit'],
             ].map(([label, href]) => (
               <li key={href} className="group relative">
                 <Link
@@ -66,7 +66,7 @@ const Footer = () => {
             {[
               ['Help Center', '/help'],
               ['Contact', '/#contact'],
-              ['Documentation', '/#home'],
+              ['Documentation', '/documentation'],
               ['Privacy Policy', '/privacy-policy'],
             ].map(([label, href]) => (
               <li key={href} className="group relative">

@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes'
 import Navbar from './components/Navbar'
 import StickyCTA from './components/StickyCTA'
 import Footer from './components/Footer'
+import AppLoader from './components/AppLoader'
 
 export const metadata = {
   title: 'SASWAREs',
@@ -25,7 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 min-h-screen">
             <Navbar />
             <StickyCTA />
+            <AppLoader>
             <main>{children}</main>
+            </AppLoader>
             <Footer />
           </div>
         </ThemeProvider>
