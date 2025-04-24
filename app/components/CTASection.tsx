@@ -46,7 +46,7 @@ const CTASection = () => {
         transition={{ delay: 0.6, duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <Link href="#contact" scroll={false}>
+        <Link href="/#contact" scroll={true}>
           <button className="px-8 py-4 text-base sm:text-lg font-semibold rounded-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-500 hover:to-cyan-500 transition-all text-white shadow-md shadow-pink-500/30 hover:shadow-cyan-500/40">
             🚀 Start Your Project
           </button>
