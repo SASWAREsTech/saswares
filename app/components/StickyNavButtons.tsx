@@ -45,12 +45,13 @@ const StickyNavButtons = () => {
       {showBack && (
         <button
           onClick={() => router.back()}
-          className="fixed top-6 left-6 z-50 p-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white shadow-lg dark:bg-gray-200 dark:text-black dark:hover:bg-gray-100 transition"
+          className="fixed top-6 left-6 z-50 p-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white shadow-lg dark:bg-gray-200 dark:text-black dark:hover:bg-gray-100 transition md:hidden"
           aria-label="Go back"
         >
           <FaArrowLeft />
         </button>
       )}
+
     </>
   )
 }
