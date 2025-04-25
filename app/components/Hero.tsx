@@ -128,6 +128,7 @@ const Hero = () => {
             className="relative p-4 rounded-xl border border-gray-200 dark:border-white/10 bg-white/60 dark:bg-white/5 shadow-lg backdrop-blur-lg max-w-[260px] w-full transform-gpu transition-transform"
           >
             <Image
+              rel='preload' 
               src="/logo.png"
               alt="SASWAREs Logo"
               width={240}
