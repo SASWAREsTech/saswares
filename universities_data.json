@@ -1,0 +1,514 @@
+{
+    "Islamic University of Medinah": {
+        "College of Shariah": {},
+        "College of Da`wah and Fundamentals of Religion": {},
+        "College of Noble Qur'an and Islamic Studies": {},
+        "College of Hadith and Islamic Studies": {},
+        "College of Arabic Language": {},
+        "Institute for Teaching Arabic to Non-Native Speakers": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Computer and Information Systems": {
+            "College of Computer and Information Systems": [
+                "Information Technology",
+                "Information Technology",
+                "computer science",
+                "Computer Engineering"
+            ]
+        }
+    },
+    "Umm Al Qura University": {
+        "College of Da`wah and Fundamentals of Religion": {},
+        "Higher Institute for the Promotion of Virtue and Prevention of Vice": {},
+        "College of Social Sciences": {},
+        "College of Education": {},
+        "College of Arabic Language and Literature": {},
+        "Institute for Teaching Arabic to Non-Native Speakers (Males)": {},
+        "College of Business Administration": {},
+        "College of Public Health and Health Informatics": {},
+        "Community College": {},
+        "College of Judicial Studies and Law": {},
+        "College of Applied Science": {},
+        "College of Engineering and Islamic Architecture": {},
+        "College of Medicine": {},
+        "College of Nursing": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer and Information Systems": {
+            "College of Computer and Information Systems": [
+                "Computer Science with Educational Preparation",
+                "computer science",
+                "Computer Engineering"
+            ]
+        },
+        "College of Pharmacy": {}
+    },
+    "Imam Abdulrahman Bin Faisal University": {
+        "College of Education": {},
+        "College of Arts": {},
+        "College of Applied Studies and Community Service": {},
+        "College of Business Administration": {},
+        "College of Science": {},
+        "College of Medicine": {},
+        "College of Engineering": {},
+        "College of Applied Medical Sciences": {},
+        "College of Architecture and Planning": {},
+        "College of Dentistry": {},
+        "College of Clinical Pharmacy": {},
+        "College of Nursing": {},
+        "Community College": {},
+        "College of Computer Science and Information Technology": {
+            "College of Computer Science and Information Technology": [
+                "Computer Information Systems",
+                "Computer Science"
+            ]
+        },
+        "College of Designs": {}
+    },
+    "Imam Muhammad Bin Saud Islamic University": {
+        "College of Fundamentals of Religion": {},
+        " Higher Judicial Institute": {},
+        "College of Shariah": {},
+        "Higher Institute of Da‘wah and Ihtisaab": {},
+        "College of Shariah and Islamic Studies": {},
+        "College of Social Sciences": {},
+        "College of Continuing Education and Community Service": {},
+        "College of Arabic Language": {},
+        "Institute for Teaching Arabic Language": {},
+        "College of Languages and Translation": {},
+        "College of Media and Communication": {},
+        "College of Economics and Administrative Sciences": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Computer and Information Sciences": {
+            "College of Computer and Information Sciences": [
+                "Information Technology",
+                "Information Technology",
+                "computer science",
+                "Information Studies"
+            ]
+        }
+    },
+    "Prince Sattam bin Abdulaziz University": {
+        "College of Education": {},
+        "College of Science and Humanities": {},
+        "College of Arts and Sciences": {},
+        "College of Business Administration": {},
+        "College of Engineering": {},
+        "College of Dentistry": {},
+        "College of Pharmacy": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer Engineering and Sciences": {
+            "College of Computer Engineering and Sciences": [
+                "Network Systems",
+                "Business Information Systems",
+                "Computer Science",
+                "Data science"
+            ]
+        }
+    },
+    "Princess Nourah bint Abdulrahman University": {
+        "College of Arts": {},
+        "College of Social Work": {},
+        "Deanship of Community Service and Continuing Education": {},
+        "College of Languages and Translation": {},
+        "College of Administration and Business": {},
+        "Community College": {},
+        "College of Education": {},
+        "College of Science": {},
+        "College of Design and Art": {},
+        "College of Human Medicine": {},
+        "College of Nursing": {},
+        "College of Health and Rehabilitation Sciences": {},
+        "College of Computer and Information Sciences": {
+            "College of Computer and Information Sciences": [
+                "Computer Science",
+                "Networks and Communication Systems",
+                "Information Technology"
+            ]
+        },
+        "College of Home Economics": {},
+        "College of Dentistry": {},
+        "Institute for Teaching Arabic to Non-Native Speakers (Females)": {},
+        "College of Pharmacy": {}
+    },
+    "Al-Baha University": {
+        "College of Education": {},
+        "College of Science and Arts": {},
+        "College of Arts and Humanities": {},
+        "Community College": {},
+        "College of Finance and Administrative Sciences": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Applied Medical Sciences": {},
+        "College of Clinical Pharmacy": {},
+        "College of Computer Science and Information Technology": {
+            "College of Computer Science and Information Technology": [
+                "Computer Information Systems",
+                "Information Technology",
+                "Computer Science and Engineering"
+            ]
+        }
+    },
+    "Jouf University": {
+        "College of Science and Arts": {},
+        "Community College": {},
+        "College of Shariah and Law": {},
+        "College of Education": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Medicine": {},
+        "College of Dentistry": {},
+        "College of Pharmacy": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer and Information Sciences": {
+            "College of Computer and Information Sciences": [
+                "Computer And Network Engineering"
+            ]
+        }
+    },
+    "Northern Border University": {
+        "College of Education and Arts": {},
+        "College of Home Economics": {},
+        "College of Business Administration": {},
+        "Community College": {},
+        "College of Science and Arts": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Medicine": {},
+        "College of Pharmacy": {},
+        "College of Nursing": {},
+        "College of Computer and Information Technology": {
+            "College of Computer and Information Technology": [
+                "Computer Science",
+                "Information Technology",
+                "Information Technology"
+            ]
+        },
+        "College of Applied Medical Sciences": {}
+    },
+    "TAIF UNIVERSITY": {
+        "College of Shariah and Law": {},
+        "College of Education and Arts": {},
+        "College of Education and Science": {},
+        "College of Science and Arts": {},
+        "College of Community Service and Continuing Education": {},
+        "College of Education": {},
+        "College of Arts": {},
+        "Community College": {},
+        "College of Design and Home Economics": {},
+        "College of Administrative and Financial Sciences": {},
+        "College of Applied Medical Sciences": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Dentistry": {},
+        "College of Computer and Information Technology": {
+            "College of Computer and Information Technology": [
+                "Computer Engineering",
+                "Information Technology",
+                "computer science"
+            ]
+        },
+        "College of Pharmacy": {}
+    },
+    "Qassim Universtiy": {
+        "College of Science and Arts": {},
+        "College of Shariah and Islamic Studies": {},
+        "College of Education": {},
+        "College of Arabic Language and Social Studies": {},
+        "College of Economics and Administration": {},
+        "College of Business Administration": {},
+        "College of Business": {},
+        "College of Arts and Sciences": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Architecture and Planning": {},
+        "College of Applied Medical Sciences": {},
+        "College of Pharmacy": {},
+        "College of Medical Rehabilitation Sciences": {},
+        "College of Public Health and Health Informatics": {},
+        "College of Agriculture and Veterinary Medicine": {},
+        "College of Computers": {
+            "College of Computers": [
+                "Computer Engineering",
+                "Information Technology"
+            ]
+        },
+        "College of Design and Home Economics": {}
+    },
+    "Majmaah Univesrity": {
+        "College of Education": {},
+        "College of Science and Humanities": {},
+        "Community College": {},
+        "College of Business Administration": {},
+        "College of Science": {},
+        "College of Applied Medical Sciences": {},
+        "College of Engineering": {},
+        "College of Computer and Information Sciences": {
+            "College of Computer and Information Sciences": [
+                "Information Technology",
+                "Information Technology",
+                "Computer Science"
+            ]
+        },
+        "College of Medicine": {},
+        "College of Dentistry": {}
+    },
+    "King Khalid University": {
+        "College of Shariah and Fundamentals of Religion": {},
+        "Girls College of Sciences and Arts": {},
+        "College of Education": {},
+        "College of Education - Literature Section": {},
+        "Girls College of Arts": {},
+        "College of Science and Arts": {},
+        "College of Languages and Translation": {},
+        "College of Humanities": {},
+        "College of Education - Scientific Sections": {},
+        "College of Management and Home Economics": {},
+        "College of Administrative and Financial Sciences": {},
+        "Community College for Girls": {},
+        "Community College": {},
+        "College of Science": {},
+        "College of Science for Girls": {},
+        "College of Engineering": {},
+        "College of Computer Science": {
+            "College of Computer Science": [
+                "Computer Engineering",
+                "Network And Communications Engineering",
+                "Information Technology",
+                "Computer Science"
+            ]
+        },
+        "College of Medicine": {},
+        "College of Applied Medical Sciences": {},
+        "College of Pharmacy": {},
+        "College of Dentistry": {},
+        "College of Nursing": {}
+    },
+    "King Saud University": {
+        "College of Business Administration": {},
+        "College of Education": {},
+        "College of Arts": {},
+        "College of Applied Studies and Community Service": {},
+        "College of Languages and Translation": {},
+        "College of Tourism and Archaeology": {},
+        "College of Food and Agricultural Sciences": {},
+        "Community College": {},
+        "College of Applied Medical Sciences": {},
+        "College of Law and Political Science": {},
+        "College of Sports Science and Physical Activity": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Architecture and Planning": {},
+        "College of Medicine": {},
+        "College of Dentistry": {},
+        "College of Pharmacy": {},
+        "College of Nursing": {},
+        "College of Computer and Information Sciences": {
+            "College of Computer and Information Sciences": [
+                "Computer Engineering",
+                "Information Technology",
+                "Software Engineering",
+                "Data Management",
+                "Networking And Security",
+                "Science of Computer Engineering Networks",
+                "Information Technology",
+                "Computer Science",
+                "Science of Computer Engineering",
+                "Internet and Multimedia Technologies"
+            ]
+        },
+        "Institute of Arabic Language": {},
+        "Prince Sultan bin Abdul Aziz College for Emergency Medical Services": {}
+    },
+    "King Abdulaziz University": {},
+    "King Faisal University": {
+        "College of Education": {},
+        "College of Arts": {},
+        "College of Agricultural and Food Sciences": {},
+        "Community College": {},
+        "College of Business Administration": {},
+        "College of Applied Studies and Community Service": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "Faculty of Veterinary Medicine and Animal Resources": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer Science and Information Technology": {
+            "College of Computer Science and Information Technology": [
+                "Computer Information Systems",
+                "computer science",
+                "Networks and Communications",
+                "Computer Engineering"
+            ]
+        },
+        "College of Dentistry": {},
+        "College of Medicine": {},
+        "College of Law": {},
+        "College of Clinical Pharmacy": {}
+    },
+    "Bisha university": {
+        "College of Science and Arts": {},
+        "College of Education": {},
+        "Community College": {},
+        "College of Engineering": {},
+        "College of Medicine": {},
+        "College of Applied Medical Sciences": {}
+    },
+    "University of Tabuk": {
+        "University Faculty": {},
+        "College of Education and Arts": {},
+        "College of Home Economics": {},
+        "College of Business Administration": {},
+        "Community College": {},
+        "College of Shariah and Law": {},
+        "College of Science": {},
+        "College of Maritime Studies": {},
+        "College of Engineering": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer and Information Technology": {
+            "College of Computer and Information Technology": [
+                "Computer Engineering",
+                "Information Technology",
+                "Information Technology",
+                "Computer Science"
+            ]
+        },
+        "College of Pharmacy": {}
+    },
+    "Jazan University": {
+        "College of Education": {},
+        "College of Arts and Humanities": {},
+        "Distance Education Programs": {},
+        "College of Science and Arts": {},
+        "College of Business Administration": {},
+        "Community College": {},
+        "Community College for Girls": {},
+        "University Faculty": {},
+        "College of Shariah and Law": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Design and Architecture": {},
+        "College of Nursing and Allied Health Science": {},
+        "College of Applied Medical Sciences": {},
+        "College of Public Health and Tropical Medicine": {},
+        "College of Computer Science and Information Systems": {
+            "College of Computer Science and Information Systems": [
+                "Computer And Network Engineering",
+                "Information Technology",
+                "computer science"
+            ]
+        },
+        "College of Dentistry": {},
+        "College of Pharmacy": {}
+    },
+    "University of Jeddah": {
+        "College of Education": {},
+        "College of Science and Arts": {},
+        "College of Business": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Medicine": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer and Information Technology": {
+            "College of Computer and Information Technology": [
+                "Computer Science",
+                "Information Technology",
+                "Software Engineering",
+                "Information Technology",
+                "E-Commerce"
+            ]
+        },
+        "Community College": {},
+        "College of Applied Studies": {}
+    },
+    "University of Hail": {
+        "College of Education": {},
+        "College of Literature and Arts": {},
+        "College of Business Administration": {},
+        "College of Public Health and Health Informatics": {},
+        "Community College": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Nursing": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer Science and Engineering": {
+            "College of Computer Science and Engineering": [
+                "Software Engineering",
+                "computer science",
+                "Computer Engineering"
+            ]
+        },
+        "College of Shariah and Law": {},
+        "College of Medicine": {},
+        "College of Dentistry": {},
+        "College of Pharmacy": {}
+    },
+    "Hafr Al-Batin University": {
+        "College of Education": {},
+        "Community College": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Computer Science and Engineering": {
+            "College of Computer Science and Engineering": [
+                "Software Engineering",
+                "computer science"
+            ]
+        }
+    },
+    "Shaqra University": {
+        "College of Education": {},
+        "College of Science and Humanities": {},
+        "College of Science and Arts": {},
+        "Community College": {},
+        "College of Business Administration": {},
+        "College of Engineering": {},
+        "College of Medicine": {},
+        "College of Pharmacy": {},
+        "College of Computers": {
+            "College of Computers": [
+                "Computer Science"
+            ]
+        },
+        "College of Applied Medical Sciences": {}
+    },
+    "TAIBAH UNIVERSITY": {
+        "College of Arts and Humanities": {},
+        "College of Science and Arts": {},
+        "College of Education": {},
+        "College of Family Sciences for Girls": {},
+        "College of Business Administration": {},
+        "Community College": {},
+        "College of Science": {},
+        "College of Engineering": {},
+        "College of Medicine": {},
+        "College of Pharmacy": {},
+        "College of Applied Medical Sciences": {},
+        "College of Medical Rehabilitation Sciences": {},
+        "College of Computer Science and Engineering": {
+            "College of Computer Science and Engineering": [
+                "Computer Science",
+                "Computer Information Systems",
+                "Computer Engineering"
+            ]
+        },
+        "Higher Institute of Imams and Preachers": {},
+        "College of Dentistry": {},
+        "College of Law": {}
+    },
+    "Najran University": {
+        "College of Science and Arts": {},
+        "College of Shariah and Fundamentals of Religion": {},
+        "College of Languages": {},
+        "College of Education": {},
+        "Faculty of Administrative Sciences": {},
+        "Community College": {},
+        "College of Engineering": {},
+        "College of Nursing": {},
+        "College of Applied Medical Sciences": {},
+        "College of Computer Science and Information Systems": {
+            "College of Computer Science and Information Systems": [
+                "Information Technology",
+                "Computer Science"
+            ]
+        }
+    }
+}
